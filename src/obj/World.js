@@ -9,6 +9,7 @@ module.exports = class World {
 
     dailyTick() {
         this.tribe.dailyActivity();
+        this.food++;
         console.log("World Food : " + this.food)
     }
 
