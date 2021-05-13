@@ -31,7 +31,7 @@ module.exports = class Tribe {
         for(let i = 0; i < this.popList.length; ++i) {
             if(this.popList[i].health > 0){
                 this.popList[i].eat();
-                console.log(this.popList[i].name + " : " + this.popList[i].output + " : " + this.popList[i].health + " : " + this.popList[i].food)
+                console.log(this.popList[i].name + " : " + Math.floor(this.popList[i].foraging) + " : " + this.popList[i].health + " : " + this.popList[i].food)
             }
         }
         console.log("Tribe Food : " + this.food)
