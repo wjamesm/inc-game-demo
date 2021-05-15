@@ -1,16 +1,13 @@
-const Tribe = require("./Tribe.js");
+const Village = require("./Village.js");
 
 module.exports = class World {
 
     constructor() {
-        this.tribe = new Tribe(this);
-        this.food = 1000;
+        this.village = new Village();
     }
 
     dailyTick() {
-        this.tribe.dailyActivity();
-        this.food++;
-        console.log("World Food : " + this.food)
+        this.village.dailyActivity();
     }
 
   }

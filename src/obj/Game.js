@@ -1,5 +1,5 @@
 const World = require("./World.js");
-const Tribe = require("./Tribe.js");
+const Tribe = require("./Village.js");
 
 module.exports = class Game {
 
